@@ -63,8 +63,8 @@
 }
 
 .container .desc .buttons button {
-	height: 6rem;
-	width: 6rem;
+	width: 4.3rem;
+	height: 4.3rem;
 	border-radius: 9999rem;
 	border: 1px solid black;
 	text-transform: capitalize;
@@ -81,6 +81,20 @@
 
 .container .desc .buttons .contact {
 	background-color: var(--tiffany-blue);
+}
+
+@media (min-width: 360px) {
+	.container .desc .buttons button {
+		width: 5rem;
+		height: 5rem;
+	}
+}
+
+@media (min-width: 412px) {
+	.container .desc .buttons button {
+		width: 5.75rem;
+		height: 5.75rem;
+	}
 }
 
 @media (min-width: 1024px) {
