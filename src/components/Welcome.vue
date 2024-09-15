@@ -22,7 +22,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
-	padding: 0 1rem;
+	padding: 0 3rem;
 }
 
 .container img {
@@ -63,8 +63,8 @@
 }
 
 .container .desc .buttons button {
-	height: 5rem;
-	width: 5rem;
+	height: 6rem;
+	width: 6rem;
 	border-radius: 9999rem;
 	border: 1px solid black;
 	text-transform: capitalize;

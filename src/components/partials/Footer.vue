@@ -42,7 +42,7 @@ import TiktokIcon from '../icons/TiktokIcon.vue';
 footer {
 	margin-top: 3rem;
 	border-top: 1px solid gray;
-	padding: 1.5rem 1rem;
+	padding: 1.5rem 3rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;

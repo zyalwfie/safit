@@ -58,18 +58,21 @@ const showSideBar = ref(false);
 				to="resume"
 				class="resume"
 				active-class="active"
+				@click="showSideBar = false"
 				>resume</RouterLink
 			>
 			<RouterLink
 				to="projects"
 				class="projects"
 				active-class="active"
+				@click="showSideBar = false"
 				>projects</RouterLink
 			>
 			<RouterLink
 				to="contact"
 				class="contact"
 				active-class="active"
+				@click="showSideBar = false"
 				>contact</RouterLink
 			>
 		</aside>
@@ -95,7 +98,7 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 2rem 1rem;
+	padding: 2rem 3rem;
 	position: relative;
 	margin-bottom: 1rem;
 }
@@ -141,7 +144,7 @@ nav .vr {
 
 nav .hamburger-menu {
 	position: absolute;
-	right: 1rem;
+	right: 3rem;
 	z-index: 5;
 }
 

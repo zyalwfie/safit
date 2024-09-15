@@ -65,7 +65,7 @@ main h1,
 main .work-experience,
 main .education,
 main .skill-expertise {
-	padding: 0 1rem;
+	padding: 0 3rem;
 }
 
 main .work-experience h2 {

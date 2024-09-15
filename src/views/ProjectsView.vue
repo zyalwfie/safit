@@ -45,7 +45,7 @@
 
 <style scoped>
 main {
-	padding: 0 1rem;
+	padding: 0 3rem;
 }
 
 main h1 {
@@ -53,6 +53,10 @@ main h1 {
 	font-size: 1.75rem;
 	font-weight: 600;
 	text-transform: capitalize;
+	margin-bottom: 2rem;
+}
+
+main .project {
 	margin-bottom: 2rem;
 }
 

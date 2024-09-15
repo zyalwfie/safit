@@ -5,14 +5,12 @@
 			<span>looking forward to hearing from you</span>
 		</div>
 		<form>
-
 			<div class="name">
 				<div class="first-name">
 					<label for="first-name">first name</label>
 					<input
 						type="text"
 						id="first-name"
-						name="first-name"
 					/>
 				</div>
 				<div class="last-name">
@@ -20,7 +18,6 @@
 					<input
 						type="text"
 						id="last-name"
-						name="last-name"
 					/>
 				</div>
 			</div>
@@ -31,7 +28,6 @@
 					<input
 						type="email"
 						id="email"
-						name="email"
 					/>
 				</div>
 				<div class="subject">
@@ -39,7 +35,6 @@
 					<input
 						type="subject"
 						id="subject"
-						name="subject"
 					/>
 				</div>
 			</div>
@@ -48,20 +43,19 @@
 				<label for="message">message</label>
 				<textarea
 					id="message"
-					name="message"
 					rows="5"
 				>
 				</textarea>
 			</div>
 
-			<button type="submit">submit</button>
+			<button type="button">submit</button>
 		</form>
 	</main>
 </template>
 
 <style scoped>
 main {
-	padding: 0 1rem;
+	padding: 0 3rem;
 }
 
 main h1 {
@@ -91,10 +85,18 @@ main form {
 	gap: 1.5rem;
 }
 
+main form span {
+	color: red;
+	margin: 0;
+}
+
+input.active {
+	border-color: red;
+}
+
 main form .name label,
 main form .email-container label,
-main form .message label
- {
+main form .message label {
 	font-weight: 350;
 }
 
@@ -110,7 +112,7 @@ main form .email-container > *,
 main form .message {
 	display: flex;
 	flex-direction: column;
-	gap: .75rem;
+	gap: 0.75rem;
 }
 
 main form label {
@@ -124,6 +126,7 @@ main form textarea {
 	background-color: transparent;
 	border: 1px solid black;
 	padding: 0.75rem;
+	transition: all 0.3s ease;
 }
 
 main form button {
@@ -161,6 +164,6 @@ main form button {
 	main form .name > *,
 	main form .email-container > * {
 		flex-grow: 1;
-	}	
+	}
 }
 </style>

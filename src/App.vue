@@ -1,5 +1,5 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router';
+import { RouterView } from 'vue-router';
 import Navbar from './components/partials/Navbar.vue';
 import Footer from './components/partials/Footer.vue';
 </script>
@@ -7,9 +7,11 @@ import Footer from './components/partials/Footer.vue';
 <template>
 	<Navbar />
 
-	<Transition name="fade">
-		<RouterView />
-	</Transition>
+	<router-view v-slot="{Component}">
+		<Transition name="fade">
+			<component :is="Component"/>
+		</Transition>
+	</router-view>
 
 	<Footer />
 </template>
